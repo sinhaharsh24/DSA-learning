@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 /* function syntax
 return_type name() {
@@ -15,11 +16,19 @@ public class functions_learning {
 
         String name = "harsh sinha";
         changename(name);   // here we have given the value of name string
-        System.out.println(name);
+        System.out.println(name); // the string is not modified in this as it is can't modified
         // system.out.println(naam);
         // this can't be accessed as it is outside the function this is called scoping
-        
 
+        int[] arr = {1,2,3,4,5};
+        changearray(arr);
+        System.out.println(Arrays.toString(arr)); // here the value of array will be changed as it is modified in the funtion
+
+
+    }
+
+    static void changearray(int[] num) {
+        num[0] = 2; // here we are modifing in the array using a object
     }
 
     private static void changename(String naam) {
