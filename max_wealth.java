@@ -18,4 +18,5 @@ public class max_wealth {
         return max;
     }
 
+
 }
