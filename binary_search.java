@@ -1,10 +1,24 @@
 public class binary_search {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,6,7,8,9,10};
-        int target = 9;
+        int[] arr = {2,4,7,45,78,987,4556,20000};
+        int target = 4556;
+        int ans = binarysearch(arr,target);
+        System.out.println(ans);
+    }
+    static int binarysearch(int[] arr , int target) {
+        int start = 0;
+        int end = arr.length - 1;
+        while (start <= end ) {
+            int mid = start + (end - start) / 2;
 
-        for (int i = 0; i < arr.length; i++) {
-            
+            if (target < arr[mid]) {
+                end = mid - 1;
+            } else if (target > arr[mid] ) {
+                start = mid + 1;
+            }else{
+                return mid;
+            }
         }
+        return -1;
     }
 }
