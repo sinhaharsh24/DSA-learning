@@ -1,8 +1,12 @@
+//https://leetcode.com/problems/missing-number/description/
+//Given an array nums containing n distinct numbers in the range [0, n],
+// return the only number in the range that is missing from the array.
+
 import java.util.Arrays;
 
-public class cycle_sort {
+public class missing_number_between_distinct_numbers {
     public static void main(String[] args) {
-        int[] arr = {3, 5,2,1,4};
+        int[] arr = {4,0,2,1};
         sorting(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -23,4 +27,5 @@ public class cycle_sort {
         arr[first] = arr[second];
         arr[second] = temp;
     }
+
 }
