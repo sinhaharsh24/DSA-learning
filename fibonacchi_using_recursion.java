@@ -1,5 +1,6 @@
 public class fibonacchi_using_recursion {
     public static void main(String[] args) {
+        //time complexity is ...
         System.out.println(number(6));
     }
     static int number(int n) {
@@ -7,5 +8,5 @@ public class fibonacchi_using_recursion {
         return number(n-1) + number(n-2);
         //not a tail recursion
     }
-    
+
 }
