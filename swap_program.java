@@ -12,6 +12,11 @@ public class swap_program {
         temp = a;
         a = b;
         b = temp;
+        //use only two variable to swap these
+        //here we use bitwise operator
+        // a = a ^ b;
+        // b = a ^ b;
+        // a = a ^ b;
         System.out.println("The first number is " + a + " and the second number is " + b);
     }
 }
