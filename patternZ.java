@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class patternZ {
     public static void main(String[] args) {
@@ -27,6 +26,8 @@ public class patternZ {
 //            System.out.println();
 //        }
 
+
+        //american flag
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(" * ");
