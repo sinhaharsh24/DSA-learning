@@ -1,4 +1,4 @@
-
+//time complexity - O(N logN)
 import java.util.Arrays;
 
 public class merge_sort {
